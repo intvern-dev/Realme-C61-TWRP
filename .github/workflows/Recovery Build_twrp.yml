@@ -10,11 +10,11 @@ on:
       MANIFEST_BRANCH:
         description: 'MANIFEST_BRANCH'
         required: true
-        default: 'twrp-12.1'
+        default: 'twrp-14'
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/snowwolf725/device_oneplus_waffle-TWRP'
+        default: 'https://github.com/minimal-manifest-twrp/android_device_generic_arm64'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
@@ -22,27 +22,27 @@ on:
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/oneplus/waffle'
+        default: 'device/generic/arm64'
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
         required: false
-        default: 'https://github.com/snowwolf725/device_oneplus_sm86xx-common-TWRP'
+        default: ''
       COMMON_PATH:
         description: 'COMMON_PATH (if no common tree, leave blank)'
         required: false
-        default: 'device/oneplus/sm86xx-common'
+        default: ''
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'waffle'
+        default: 'arm64'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
-        default: 'twrp_waffle'
+        default: 'twrp_arm64'
       BUILD_TARGET:
         description: 'BUILD_TARGET'
         required: true
-        default: 'recovery'
+        default: 'vendor_boot'
 #      PATCH_INSTALLET:
 #        description: 'Patch recovery installer'
 #        required: true
